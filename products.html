@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Meesho Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .products-header {
+            background-color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-radius: var(--radius);
+        }
+        
+        .filter-sidebar {
+            background-color: white;
+            padding: 20px;
+            border-radius: var(--radius);
+            margin-bottom: 30px;
+        }
+        
+        .filter-group {
+            margin-bottom: 20px;
+        }
+        
+        .filter-group h4 {
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+        
+        .filter-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .filter-option input {
+            margin-right: 10px;
+        }
+        
+        .price-range {
+            width: 100%;
+            margin: 15px 0;
+        }
+        
+        .price-inputs {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        
+        .price-inputs input {
+            width: 45%;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shopping-bag"></i> Meesho
+                </a>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-actions">
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="categories.html">
+                        <i class="fas fa-th-large"></i>
+                        <span>Categories</span>
+                    </a>
+                    <a href="products.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Products</span>
+                    </a>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Cart</span>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        <span>Account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Women Ethnic</a></li>
+                    <li><a href="categories.html">Women Western</a></li>
+                    <li><a href="categories.html">Men</a></li>
+                    <li><a href="categories.html">Kids</a></li>
+                    <li><a href="categories.html">Home & Kitchen</a></li>
+                    <li><a href="categories.html">Beauty & Health</a></li>
+                    <li><a href="products.html" class="active">All Products</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Header -->
+    <section class="products-header">
+        <div class="container">
+            <h1 class="section-title">
+                <i class="fas fa-shopping-bag"></i> All Products
+            </h1>
+            <p>Showing 1-12 of 5000+ products</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <a href="#" class="product-card">
+                    <img src="https://th.bing.com/th?id=OPAC.6V1%2fqMZ9ax5xwQ474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1&ucfimg=1" alt="Women's Dress" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Women's Floral Printed Maxi Dress</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹399</span>
+                            <span class="original-price">₹999</span>
+                            <span class="discount">60% off</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 2 -->
+                <a href="#" class="product-card">
+                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Men's Shirt" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Men's Casual Shirt</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹299</span>
+                            <span class="original-price">₹799</span>
+                            <span class="discount">62% off</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 3 -->
+                <a href="#" class="product-card">
+                    <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/3c5aec57-7080-4ab2-92ef-5633ff7a0b93._CR0,0,1200,628_SX810_CB1169409_QL70_.jpg" alt="Sneakers" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Unisex Sports Running Sneakers</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹499</span>
+                            <span class="original-price">₹1499</span>
+                            <span class="discount">66% off</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 4 -->
+                <a href="#" class="product-card">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jackets" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Winter wear jackets</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹249</span>
+                            <span class="original-price">₹699</span>
+                            <span class="discount">64% off</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 5 -->
+                <a href="#" class="product-card">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Watch" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Printed Tshirts</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹599</span>
+                            <span class="original-price">₹1299</span>
+                            <span class="discount">53% off</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 6 -->
+                <a href="#" class="product-card">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jewellery" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Stylish Bags</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹199</span>
+                            <span class="original-price">₹499</span>
+                            <span class="discount">60% off</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 7 -->
+                <a href="#" class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Kitchen" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Non-Stick Cookware Set</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹899</span>
+                            <span class="original-price">₹1999</span>
+                            <span class="discount">55% off</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 8 -->
+                <a href="#" class="product-card">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Electronics" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Gadgets</h3>
+                        <div class="product-price">
+                            <span class="current-price">₹799</span>
+                            <span class="original-price">₹1999</span>
+                            <span class="discount">60% off</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="text-center mt-30">
+                <div style="display: inline-flex; gap: 10px;">
+                    <a href="#" class="btn btn-secondary">Previous</a>
+                    <a href="#" class="btn btn-primary">1</a>
+                    <a href="#" class="btn btn-secondary">2</a>
+                    <a href="#" class="btn btn-secondary">3</a>
+                    <a href="#" class="btn btn-secondary">4</a>
+                    <a href="#" class="btn btn-secondary">5</a>
+                    <a href="#" class="btn btn-secondary">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shop Categories</h3>
+                    <ul>
+                        <li><a href="categories.html">Women Ethnic</a></li>
+                        <li><a href="categories.html">Women Western</a></li>
+                        <li><a href="categories.html">Men</a></li>
+                        <li><a href="categories.html">Kids</a></li>
+                        <li><a href="categories.html">Home & Kitchen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Download App</h3>
+                    <p>Get the best shopping experience on our mobile app.</p>
+                    <p style="margin-top: 15px; font-size: 14px; color: #ddd;">
+                        <i class="fas fa-envelope"></i> help@meesho.com<br>
+                        <i class="fas fa-phone"></i> 1800-123-4567
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2023 Meesho Clone. This is a practice project for educational purposes.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
