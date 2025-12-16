@@ -21,5 +21,16 @@ Home Page - Landing page with hero section, categories, and featured products
 Products Page - Complete product listing with grid view
 Categories Page - Category-specific product browsing
 Cart Page - Shopping cart with item management
-Account Page - User profile, orders, addresses, and settings
+
+4.Technologies Used
+HTML5 - Semantic markup and structure
+CSS3 - Styling, animations, and responsive design
+Font Awesome - Icons for enhanced UI
+Google Fonts - Typography (Segoe UI)
+CSS Grid & Flexbox - Layout and alignment
+CSS Variables - Consistent theming
+
+
+
+
 
